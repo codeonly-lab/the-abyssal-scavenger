@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dt0o2rrq7avm5"]
+
+[ext_resource type="Texture2D" uid="uid://bcnlmn0vv8rlv" path="res://color-blank-circle-button-badge-png-removebg-preview.png" id="1_orgmm"]
+[ext_resource type="Script" uid="uid://c1s2c2mnrkyfk" path="res://Scripts/SonarPulse.gd" id="2_jfibo"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_m03vm"]
+
+[node name="SonarPulse" type="Area2D" unique_id=1563688830]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=138716376]
+shape = SubResource("CircleShape2D_m03vm")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=378170102]
+position = Vector2(0, -1.0000153)
+scale = Vector2(0.108, 0.1)
+texture = ExtResource("1_orgmm")
+offset = Vector2(0.1, 0.1)
+script = ExtResource("2_jfibo")

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c7vmqka4aaflo"]
+
+[ext_resource type="Script" uid="uid://ckpos4y3yji44" path="res://Scripts/Submarine.gd" id="1_6irpn"]
+[ext_resource type="Texture2D" uid="uid://dgkrckfp71rfe" path="res://vmwv_cdbe_220416-removebg-preview.png" id="2_mgm4y"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_6eij2"]
+radius = 176.02924
+height = 1351.8724
+
+[node name="Submarine" type="CharacterBody2D" unique_id=1444763761]
+script = ExtResource("1_6irpn")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1458336333]
+position = Vector2(-551, 25)
+rotation = 1.5655134
+shape = SubResource("CapsuleShape2D_6eij2")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1340841978]
+position = Vector2(9, -147.00006)
+scale = Vector2(3.2371118, 2.8177419)
+texture = ExtResource("2_mgm4y")
